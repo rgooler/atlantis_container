@@ -10,6 +10,3 @@ RUN echo "==[Raising ulmits]==" && \
     echo "root      soft    nofile      500000" >> /etc/security/limits.conf && \
     echo "==[chmod script]==" && \
     chmod +x /usr/local/bin/demo.sh
-
-
-ENTRYPOINT ["entrypoint.sh"]
