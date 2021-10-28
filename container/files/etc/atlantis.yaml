@@ -1,0 +1,22 @@
+repos:
+- id: /.*/
+  apply_requirements: [mergeable, approved]
+  workflow: custom
+  allow_custom_workflows: false
+
+policies:
+  owners:
+    users:
+      - rgooler
+  policy_sets:
+    - name: main
+      path: /etc/atlantis/policies/
+      source: local
+
+# workflows lists server-side custom workflows
+workflows:
+    plan:
+      steps:
+      - run: terraform_fmt.sh
+      - init
+      - plan
