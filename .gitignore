@@ -1,0 +1,12 @@
+
+# IntelliJ project files
+.idea
+*.iml
+/environments/**/.terraform/
+/environments/**/terraform.tfstate
+/environments/**/terraform.tfstate.*
+.DS_Store
+.vscode
+.terraform/plugins
+*/.terraform/plugins
+.virtualenv

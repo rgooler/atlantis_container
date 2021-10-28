@@ -1,0 +1,9 @@
+version: 3
+projects:
+
+- name: prod
+  dir: terraform/prod
+  terraform_version: 1.0.9
+- name: dev
+  dir: terraform/dev
+  terraform_version: 1.0.9
